@@ -7,10 +7,12 @@ const Text = (type, content, keyword) => {
     text.classList.add("main-title") :
     type === "h2" ?
     text.classList.add("subtitle") :
-    text.classList.add("paragraph")
+    type === "p" ?
+    text.classList.add("paragraph") :
+    ''
 
     keyword === "lighter-text" && 
-    text.classList.add("lighter-text") 
+    text.classList.add("lighter-text");
     
     return text
 }

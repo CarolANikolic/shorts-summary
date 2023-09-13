@@ -4,12 +4,13 @@
 }
 
 .subtitle {
-    margin-top: 6.5rem;
+    margin-top: 4rem;
 }
 
 .paragraph {
     text-align: justify;
     max-width: 400px;
+    margin-top: -5px;
 }
 
 .lighter-text {

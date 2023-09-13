@@ -13,6 +13,8 @@
     outline: 2px solid #8257e5;
 }
 
-.app-containerimg {
-    margin: 0 auto;
+@media (min-width: 760px) {
+    .input-url {
+        width: 22rem
+    }
 }
