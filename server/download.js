@@ -14,7 +14,7 @@ export const download = (videoId) =>
         }
     }
     ).on("end", () => {
-        console.log("Video downloded.");
+        console.log("Video downloded with sucess!");
         resolve()
     }
     ).on("error", (error) => {

@@ -12,23 +12,23 @@ import AppName from "./components/AppName"
 import Text from "./components/Text"
 
 // Functions
-import sendForm from "./assets/functions/sendForm.js"
+import form from "./form.js"
 
 const main = document.querySelector("main");
-const form = document.createElement("form");
+const formulary = document.createElement("form");
 const summarySection =  document.createElement("section");
-form.className = "form";
-form.id = "url-form";
+formulary.className = "form";
+formulary.id = "url-form";
 
-form.appendChild(Input("url", "input-url", "Please enter the video URL"));
-form.appendChild(Button("submit", "Summarize"))
+formulary.appendChild(Input("url", "input-url", "Please enter the video URL"));
+formulary.appendChild(Button("submit", "Summarize"))
 
 summarySection.appendChild(Text("h2", "Summary"));
 summarySection.appendChild(Text("p", "Choose a short video to summarize", "lighter-text", "summary"))
 
 main.appendChild(AppName());
-main.appendChild(form);
+main.appendChild(formulary);
 main.appendChild(summarySection);
-form.addEventListener("submit", (event) => {
-    sendForm(event, "#input-url")
+formulary.addEventListener("submit", (event) => {
+    form(event, "#input-url")
 });
