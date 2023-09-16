@@ -17,3 +17,8 @@
     color: #7c7c8a;
     user-select: none;
 }
+
+.darker-text {
+    color: #fff;
+    user-select: auto;
+}
