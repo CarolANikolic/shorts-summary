@@ -1,7 +1,8 @@
-const Text = (type, content, keyword) => {
+const Text = (type, content, keyword, uniqueAttribute) => {
     const text = document.createElement(type);
     text.textContent = content;
     text.className = "text-general-style";
+    text.setAttribute("data-attribute", uniqueAttribute)
 
     type === "h1" ?
     text.classList.add("main-title") :
