@@ -3,6 +3,10 @@
     color: #fff;
 }
 
+.main-title {
+    text-align: center;
+}
+
 .subtitle {
     margin-top: 4rem;
 }
