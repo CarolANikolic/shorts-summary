@@ -1,12 +1,12 @@
 # Shorts Summary
 
-Shorts Summary is my first project with backend and AI. With Shorts Summary you can get the summary of a short video, by entering a valid url video of a short from Youtube. This project is part of NLW (Next Level Week) from Rocketseat. The purpose of NLW is to share with the brazilian community of programmer's a challange project for free with the goal of improve the programmers coding skills and demonstrate new trends. 
+Shorts Summary is my first project with backend and AI. With Shorts Summary you can get the summary of a short video, by entering a valid URL video of a short from YouTube. This project is part of NLW (Next Level Week) from Rocketseat. The purpose of NLW is to share with the Brazilian community of programmers a challenging project for free with the goal of improving the programmer's coding skills and demonstrating new trends. 
 
-### This project is not deployed since there is a need for a hosting. However, you can check it out and run locally in your navigator. Please, see "Requirements".
+### This project is not deployed since there is a need for hosting. However, you can check it out and run it locally in your navigator. Please, see "Requirements".
 
-<img src="./public/images/screenshot/screenshot-shorts-summary.png" width=100% alt="Shorts summary initial page" width=100%>
+<img src="./public/screenshots/screenshot-shorts-summary.png" width=60% alt="Shorts summary initial page" width=100%>
 
-<img src="./public/images/screenshot/screenshot-summary.png" width=100% alt="Shorts summary with a video summary" width=100%>
+<img src="./public/screenshots/screenshot-summary.png" width=60% alt="Shorts summary with a video summary" width=100%>
 
 ## Development Process
 
@@ -14,21 +14,21 @@ Shorts Summary is my first project with backend and AI. With Shorts Summary you 
 - Initiate project using vite@latest;
 - Frontend development: HTML structure and styles;
 - Downloading dependencies for the backend: express cors axios;
-- Set up server side and routes;
-- Downloading ytdl-core dependency for downloading Youtube videos;
-- Creating function for video download;
+- Set up server-side and routes;
+- Downloading ytdl-core dependency for downloading YouTube videos;
+- Creating a function for video download;
 - Verifying if the video is a short;
-- Connecting front and backend;
-- Recovering from the frontend the video url, specificaly the video id and sending it to the server;
+- Connecting front and Backend;
+- Recovering from the frontend the video URL, specifically the video ID and sending it to the server;
 - Displaying message to the user;
 - Using mock for testing response /utils;
 - Installing dependencies for AI:
     @xenova/transformers: a library that allows you to run machine learning models.
     fluent-ffmpeg ffmpeg-static: tool for video and audio processing, like editing and transcoding.
-    node-wav: node module used to work with wav audio files (decoding (reading) and encoding (writing)).
-- Creating function to convert and read audio;
-- Creating function to transcribe the audio to text format;
-- Creating function to create the summary of the text with AI, model Xenova/distilbart-cnn-12-6;
+    node-wav: node module used to work with WAV audio files (decoding (reading) and encoding (writing)).
+- Creating a function to convert and read audio;
+- Creating a function to transcribe the audio to text format;
+- Creating a function to create the summary of the text with AI, model Xenova/distilbart-cnn-12-6;
 - Testing.
 
 ## Built with
@@ -56,7 +56,7 @@ You will also need to download all the dependencies used in this project by usin
 npm install
 \```
 
-To run de server side in your machine, use de following command:
+To run de server side on your machine, use de following command:
 \```shell
 npm run server
 \```
@@ -68,10 +68,10 @@ npm run web
 
 ## What I learned
 
-### Th use of ffmpeg library, Promise and Float32Array:
+### The use of ffmpeg library, Promise, and Float32Array:
 
 - Convert video MP4 into a WAV file using ffmpeg library;
-- Use Promise to manage tasks that takes time and handle potential outcomes (successful outcomes (resolved) and errors (rejected) when the task is completed;
+- Use Promise to manage tasks that take time and handle potential outcomes (successful outcomes (resolved) and errors (rejected) when the task is completed;
 - Use Float32Array to store float numbers (audio, graphics, scientific calc) to make the code faster and to use less memory space.
 
 ~~~
@@ -112,7 +112,7 @@ new Promise((resolve, reject) => {
 
 ### Backend and Async Functions:
 - Setup the backend/server side, route and endpoints;
-- Use async functions (asynchronous functions), to run the code not necessarily from top to botton. In this way the code can run/finish some tasks, while other tasks are paused, so the program does not freeze, instead, in the meanwhilea finishes other tasks and resume those paused tasks later. I also learn the use of "await" keyword to pause certain tasks/functions and wait for a Promise to resolve before continuing.
+- Use async functions (asynchronous functions), to run the code not necessarily from top to bottom. In this way, the code can run/finish some tasks, while other tasks are paused, so the program does not freeze, instead, in the meanwhile finishes other tasks and resumes those paused tasks later. I also learned the use of the "await" keyword to pause certain tasks/functions and wait for a Promise to resolve before continuing.
 
 ~~~
 import cors from "cors"
@@ -180,6 +180,6 @@ export async function summarize(text) {
 ~~~
 
 ## Useful resources
-- [Hugging Face](https://huggingface.co): This platform offers AI models to use in your projects. You can search by AI specialization areas such as: Multimodal, Computer Vision, Natural Language Procedding (Shorts Summary is part of this area), Audio, Tabular and Reinforcement Learning.
+- [Hugging Face](https://huggingface.co): This platform offers AI models to use in your projects. You can search by AI specialization areas such as Multimodal, Computer Vision, Natural Language Processing (Shorts Summary is part of this area), Audio, Tabular, and Reinforcement Learning.
 
 ### Made with :heart: by [Caroline Almeida Nikolic](https://www.linkedin.com/in/carolinealmeidanikolic/)
