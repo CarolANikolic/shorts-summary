@@ -38,7 +38,6 @@ const form = async (event, inputId) => {
 
         // Display the summary of the video transcription
         content.textContent = summary.data.result;
-        console.log(transcription)
         content.classList.toggle("darker-text");
     } 
     catch (error) {
