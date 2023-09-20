@@ -23,9 +23,9 @@ Shorts Summary is my first project with backend and AI. With Shorts Summary you 
 - Displaying message to the user;
 - Using mock for testing response /utils;
 - Installing dependencies for AI:
-    @xenova/transformers: a library that allows you to run machine learning models.
-    fluent-ffmpeg ffmpeg-static: tool for video and audio processing, like editing and transcoding.
-    node-wav: node module used to work with WAV audio files (decoding (reading) and encoding (writing)).
+ * @xenova/transformers: a library that allows you to run machine learning models.
+ * fluent-ffmpeg ffmpeg-static: tool for video and audio processing, like editing and transcoding.
+ * node-wav: node module used to work with WAV audio files (decoding (reading) and encoding (writing)).
 - Creating a function to convert and read audio;
 - Creating a function to transcribe the audio to text format;
 - Creating a function to create the summary of the text with AI, model Xenova/distilbart-cnn-12-6;
@@ -49,22 +49,22 @@ Shorts Summary is my first project with backend and AI. With Shorts Summary you 
 
 ## Requirements
 
-To work with the code, you will need, before you begin, to install in your machine: NodeJs, Git and to have a source-code editor such as [VSCode](https://code.visualstudio.com).
+To work with the code, you will need, before you begin, to install on your machine: NodeJs, Git and to have a source-code editor such as [VSCode](https://code.visualstudio.com).
 You will also need to download all the dependencies used in this project by using this command in your terminal:
 
-\```shell
+```
 npm install
-\```
+```
 
 To run de server side on your machine, use de following command:
-\```shell
+```
 npm run server
-\```
+```
 
-To run de frontend side in your machine, use de following command:
-\```shell
+To run de frontend side on your machine, use de following command:
+```
 npm run web
-\```
+```
 
 ## What I learned
 
